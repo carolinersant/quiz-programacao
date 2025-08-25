@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    /* Fundo escuro com gradiente roxo */
+    background: linear-gradient(135deg, #0D0D0D, #1A001A, #4B0082);
+    background-size: 400% 400%;
+    animation: backgroundAnim 20s ease infinite;
+    min-height: 100vh;
+    color: #fff;
+}
+
+@keyframes backgroundAnim {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.app {
+    background: linear-gradient(145deg, #1A001A, #4B0082);
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    margin: 50px auto 0 auto;
+}
+
+.app h1 {
+    color: #E0B3FF;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #000;
+    border-bottom: 2px solid rgba(224, 179, 255, 0.5);
+    padding-bottom: 15px;
+}
+
+#pergunta {
+    font-size: 20px;
+    color: #D1B3FF;
+    font-weight: 600;
+    margin: 25px 0;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.btn {
+    background: linear-gradient(90deg, #6A0DAD, #8E2DE2);
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    font-size: 16px;
+}
+
+.btn:hover:not([disabled]) {
+    background: linear-gradient(90deg, #8E2DE2, #6A0DAD);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.btn:disabled {
+    cursor: no-drop;
+    opacity: 0.6;
+}
+
+#btn-proximo {
+    background: linear-gradient(90deg, #6A0DAD, #8E2DE2);
+    color: #FFFFFF;
+    font-weight: 700;
+    width: 180px;
+    border: 0;
+    padding: 15px;
+    margin: 25px auto 0;
+    display: block;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    font-size: 16px;
+    display: none;
+    transition: all 0.4s ease;
+}
+
+#btn-proximo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.correct {
+    background: linear-gradient(90deg, #16A34A, #22C55E) !important;
+    color: #FFFFFF;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.incorret {
+    background: linear-gradient(90deg, #DC2626, #EF5350) !important;
+    color: #FFFFFF;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
