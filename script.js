@@ -91,7 +91,7 @@ const questions = [
   }
 ];
 
-// ------------------------ QUIZ LOGIC ------------------------
+
 
 const questionElement = document.getElementById("pergunta");
 const answerButtons = document.getElementById("botoes-resposta");
@@ -177,7 +177,7 @@ function showScore() {
   nextButton.innerText = "Reiniciar";
   nextButton.style.display = "block";
 
-  // Remove o listener de próxima e adiciona o listener para reiniciar o quiz
+  
   nextButton.removeEventListener("click", handleNextButton);
   nextButton.addEventListener("click", restartQuiz);
 }
