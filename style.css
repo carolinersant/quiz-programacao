@@ -6,7 +6,7 @@
 }
 
 body {
-    /* Fundo escuro com gradiente roxo */
+    
     background: linear-gradient(135deg, #0D0D0D, #1A001A, #4B0082);
     background-size: 400% 400%;
     animation: backgroundAnim 20s ease infinite;
